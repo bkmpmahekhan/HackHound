@@ -10,14 +10,19 @@ banner = """
 """
 print(banner)
 
-
-print("Press r to use HackHoundPS for Reconnaissance and Scanning")
-print("Press v to use HackHoundVS for Vulnerability Sacnning and Report")
+print("Press r to use HackHoundReco for Reconaissance and Scanning")
+print("Press s to use HackHoundPS for Scannig and Enumeration")
+print("Press v to use HackHoundVS for Vulnerability Scanning and Report")
 print("Prsss e to use HackHoundEX for Exploitation")
-print("Prsee p to use HackHoundPE for PostExploitation")
+print("Press p to use HackHoundPE for PostExploitation")
 key = input("Enter a key: ")
 
 if key.lower() == 'r':
+        # Execute HackHound_PortScanner.py
+        import subprocess
+        subprocess.run(["python", "HackHoundReco.py"])
+
+if key.lower() == 's':
         # Execute HackHound_PortScanner.py
         import subprocess
         subprocess.run(["python", "HackHoundPS.py"])
