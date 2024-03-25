@@ -10,7 +10,7 @@ banner = """
 """
 print(banner)
 
-print("Press r to use HackHoundReco for Reconaissance and Scanning")
+print("Press r to use HackHoundReco for Reconaissance")
 print("Press s to use HackHoundPS for Scannig and Enumeration")
 print("Press v to use HackHoundVS for Vulnerability Scanning and Report")
 print("Prsss e to use HackHoundEX for Exploitation")
